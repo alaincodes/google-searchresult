@@ -1,0 +1,77 @@
+/* Simple CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.superContainer {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(10, auto);
+  grid-gap: 2px;
+  margin: 1em;
+}
+
+/* .superHeader {
+  grid-column-start: span 12;
+  border: 1px solid palegreen;
+} */
+
+.logoHeader {
+  /* grid-column: 1 / span 1; */
+  grid-column-start: 1;
+  grid-column-end: 1;
+  border: 1px solid palegreen;
+  width: 92px;
+  height: 30px;
+}
+
+.searchHeader {
+  /* grid-column: 2 / span 6; */
+  grid-column-start: 2;
+  grid-column-end: 6;
+  border: 1px solid palegreen;
+}
+
+.loginHeader {
+  /* grid-column: 9 / span 5; */
+  grid-column-start: 6;
+  grid-column-end: 12;
+  border: 1px solid palegreen;
+}
+
+.superNav {
+  grid-row: 2;
+  grid-column: 1 / span 12;
+  border: 1px solid palegreen;
+}
+
+.ulNav > li {
+  display: inline;
+  margin-left: 1em;
+}
+
+.ulNav > li > a {
+  text-decoration: none;
+  color: #777;
+}
