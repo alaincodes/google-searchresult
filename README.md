@@ -1,2 +1,2 @@
 # google-searchresult
-google search result page
+Trying to build Google Search Result with CSS Grid.
